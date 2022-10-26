@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block purch %}
+
+    <div class="form-group">
+      <form method="POST">
+          <p>Вы действительно хотите удалить клиента {{ purchase.name }} № {{ purchase.id }}</p>
+          <input type="submit" value="Удалить" class="btn btn-danger"/>
+      </form>
+    </div>
+
+{% endblock %}
